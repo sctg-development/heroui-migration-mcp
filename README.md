@@ -51,6 +51,7 @@ To enable them:
     }
   }
 }
+```
 
 ## ✨ Features
 
