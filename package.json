@@ -19,8 +19,7 @@
     "build-index": "tsx src/cli/build-index.ts",
     "scan-project": "tsx src/cli/scan-project.ts",
     "audit-tailwind": "tsx src/cli/audit-tailwind.ts",
-    "export-code": "tsx src/export-code.ts",
-    "export-code:script": "tsx script/export-code.ts"
+    "export-code": "tsx src/export-code.ts"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.18.0",
