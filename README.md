@@ -2,49 +2,94 @@
 
 **Version: 0.3.0**
 
-A Model Context Protocol (MCP) server designed to streamline the migration of your **HeroUI v2** (formerly NextUI) projects to the newest **HeroUI v3**.
+A Model Context Protocol (MCP) server to help migrate **HeroUI v2 / NextUI** projects toward **HeroUI v3 beta** with a practical workflow based on project scanning, file analysis, guided rewrites, component comparison, and documentation lookup.
 
 ## 🚀 Overview
 
-HeroUI v3 introduces significant changes, including a shift to **Compound Components** (dot-notation), a new CSS-only theming engine (Tailwind v4 ready), and refined Hook APIs. This MCP server provides a comprehensive suite of tools for:
-- Scanning projects to identify v2 components and patterns
-- Analyzing migration compatibility and requirements
-- Transforming code with heuristic-driven AST rewrites
-- Accessing comprehensive documentation for both versions
-- Auditing Tailwind configurations
+HeroUI v3 introduces important changes compared with v2:
+
+- more compound component APIs
+- package and import changes
+- updated overlay and hook patterns
+- Tailwind/CSS workflow changes
+- some components that still require manual migration decisions
+
+This server is designed to support a **controlled, review-first migration workflow**:
+
+1. Scan a project.
+2. Analyze impacted files.
+3. Rewrite safe patterns.
+4. Review manual changes.
+5. Cross-check components against the generated documentation corpus.
+
+## Public API
+
+By default, the server exposes the main public tools below:
+
+- `corpus_status` — check whether generated documentation artifacts are present and usable
+- `scan_project` — scan a codebase and identify files using legacy HeroUI/NextUI patterns
+- `analyze_file` — inspect a file and return findings about imports, components, props, hooks, and Tailwind usage
+- `rewrite_file` — apply heuristic rewrites and return the rewritten code plus diagnostics
+- `compare_component` — compare a component across v2 and v3 and summarize migration status
+- `audit_tailwind` — inspect a Tailwind config for legacy HeroUI patterns
+
+### Legacy tools
+
+Some older compatibility/debugging tools still exist, but they are **not enabled by default**.
+
+To enable them:
+
+```json
+{
+  "mcpServers": {
+    "heroui-migration": {
+      "command": "node",
+      "args": ["/absolute/path/to/heroui-migration-mcp/dist/src/index.js"],
+      "env": {
+        "LEGACY_TOOLS_ENABLED": "true"
+      }
+    }
+  }
+}
 
 ## ✨ Features
 
-### 📊 Scanning & Analysis
-- **`scan_project`**: Recursively scans a directory for files using legacy v2 components with priority classification.
-- **`corpus_status`**: Checks presence and metadata of generated documentation artifacts.
-- **`analyze_file`**: Performs detailed analysis of code for legacy imports, components, props, hooks, and Tailwind patterns.
-- **`analyze_legacy_imports`**: Quick heuristic scanner for HeroUI/NextUI v2 imports and symbols.
+### Project scanning
+- Detects legacy HeroUI/NextUI usage across a project
+- Highlights affected files
+- Assigns priority levels to help sequence the migration work
 
-### 🛠️ Code Transformation
-- **`rewrite_file`**: Applies heuristic AST-based migrations to convert v2 code to v3 patterns, with detailed diagnostics:
-    - Component renaming (e.g., `CardHeader` → `Card.Header`)
-    - Hook migration (e.g., `useDisclosure` → `useOverlayState`)
-    - Smart import replacement
-- **`compare_component`**: Shows component presence/status between v2 and v3 with alias lookup and breaking changes.
-- **`migrate_file_code`** *(legacy)*: Simpler v2→v3 transformation wrapper.
+### File analysis
+- Detects legacy imports
+- Detects component usage that changed in v3
+- Flags hook migrations and prop migrations
+- Returns structured findings with severity, confidence, and manual steps
 
-### 🎨 Configuration & Documentation
-- **`audit_tailwind`**: Analyzes Tailwind configuration for legacy HeroUI patterns and v4-readiness.
-- **`check_v3_compatibility`** *(legacy)*: Heuristic compliance check for v3 patterns.
-- **`diff_component`** *(legacy)*: Side-by-side v2 vs v3 documentation comparison.
-- **`get_navbar_v3_backport`** *(legacy)*: Generates a v3-compatible Navbar component (not yet native in v3).
+### Code rewriting
+- Rewrites a subset of safe patterns automatically
+- Returns:
+  - rewritten code
+  - edits
+  - warnings
+  - manual review flag
+  - confidence score
 
-### 📚 Documentation Access
-- **Generated doc resources** (`heroui://generated/{name}`): Direct access to LLM-optimized v2, v3 Web, and v3 Native documentation.
-- **`read_generated_v2_doc`** *(legacy)*: Read individual v2 LLM output files (components, full, index).
-- **`read_generated_v3_doc`** *(legacy)*: Read individual v3 LLM output files (components, full, web, native, index).
-- **`list_generated_v2_outputs`** *(legacy)*: List available v2 documentation files.
-- **`list_generated_v3_outputs`** *(legacy)*: List available v3 documentation files.
-- **`get_migration_guide`** *(legacy)*: Component-specific migration guidance.
+### Component comparison
+- Looks up component presence and migration status between v2 and v3
+- Helps distinguish:
+  - same component
+  - renamed component
+  - compound API migration
+  - removed/unknown component
 
-### 🔍 Utilities
-- **`resolve_alias`** *(legacy)*: Resolve canonical names and confidence for legacy component aliases.
+### Documentation corpus
+- Uses generated v2/v3 docs optimized for migration lookup
+- Supports component-only and full documentation outputs
+- Exposes generated documentation as MCP resources
+
+### Tailwind audit
+- Detects outdated HeroUI/Tailwind patterns
+- Helps prepare CSS and config changes before component rewrites
 
 ## 📦 Installation
 
@@ -59,10 +104,25 @@ git clone https://github.com/sctg-development/heroui-migration-mcp.git
 cd heroui-migration-mcp
 npm install
 npm run build
-npm run build-corpus
 ```
 
-### 3. Configure in Your MCP Client
+### 3. Build the documentation corpus
+
+Before using the server seriously, generate the migration corpus and indexes:
+
+```bash
+npm run build-corpus -- --version all
+npm run build-index -- --version all
+npm run doctor
+```
+
+What these commands do:
+
+- `build-corpus` generates v2/v3 documentation artifacts in `data/generated`
+- `build-index` builds component indexes for faster and more reliable lookups
+- `doctor` checks that the generated artifacts are present and healthy
+
+### 4. Configure in Your MCP Client
 Configure the server in your MCP client (e.g., Claude Desktop, Cursor, or other MCP-compatible editors):
 
 ```json
@@ -91,73 +151,79 @@ Configure the server in your MCP client (e.g., Claude Desktop, Cursor, or other 
 }
 ```
 
-## 🎯 Usage Workflow
+## 🎯 Recommended workflow
 
 ### Recommended Migration Process
 
-1. **Prepare Documentation** (first time setup):
-   ```bash
-   npm run generate:heroui-v2:full
-   npm run generate:heroui-v3:full
-   ```
+### 1. Verify the corpus
+Call `corpus_status` to confirm the generated documentation artifacts are ready.
 
-2. **Build Project Index** (optional, for faster lookups):
-   ```bash
-   npm run build-index
-   ```
+### 2. Scan the target project
+Call `scan_project` on the app directory you want to migrate, for example `apps/client`.
 
-3. **Initial Scan** - Use your MCP client to call `scan_project`:
-   - Identifies all files requiring migration
-   - Returns priority classification for each file
+Expected outcome:
+- list of affected files
+- priority classification
+- first overview of the migration scope
 
-4. **Analyze Files** - For each file, use `analyze_file` to:
-   - Detect legacy imports and components
-   - Identify prop changes and hook migrations needed
-   - Flag potential breaking changes
+### 3. Analyze representative files
+Use `analyze_file` on the files reported by the scan.
 
-5. **Transform Code** - Use `rewrite_file` to:
-   - Apply AST-based transformations
-   - Review suggested edits with confidence levels
-   - Manually verify Navbar and complex components
+Focus first on:
+- app providers
+- layout and navbar files
+- modal/dropdown/table usage
+- auth and shell components
+- shared UI primitives
 
-6. **Verify Configuration** - Use `audit_tailwind` to:
-   - Check Tailwind configuration for v2-specific patterns
-   - Ensure v4 compatibility
+### 4. Rewrite safe patterns
+Use `rewrite_file` on files where the analysis indicates mostly safe changes.
 
-7. **Final Check** - Use `compare_component` for any components you want double-checked
+Always review:
+- imports
+- compound component nesting
+- modal structure
+- hooks and overlay logic
+- navbar-related code
+
+### 5. Audit Tailwind
+Use `audit_tailwind` on your Tailwind configuration before or during the migration.
+
+### 6. Validate uncertain components
+Use `compare_component` whenever a component mapping is unclear or looks suspicious.
+
+### 7. Test incrementally
+After each batch of changes:
+- run TypeScript checks
+- run lint
+- run unit tests
+- smoke-test critical UI flows
+
 
 ### Command Line Interface
 
-The project includes several CLI utilities for non-MCP workflows:
+The project also provides standalone CLI utilities:
 
 ```bash
-# Scan a project directory for v2 components
-npm run scan-project -- --directory ./src
+# Build documentation corpus
+npm run build-corpus -- --version all
 
-# Audit Tailwind configuration
-npm run audit-tailwind -- --file tailwind.config.ts
+# Build component indexes
+npm run build-index -- --version all
 
-# Run health diagnostics
+# Check corpus health
 npm run doctor
 
-# Build documentation corpus (generates v2/v3 docs)
-npm run build-corpus
+# Scan a target project
+npm run scan-project -- --directory ./apps/client --force
 
-# Build component indexes for faster lookups
-npm run build-index
-```
+# Audit Tailwind config
+npm run audit-tailwind -- --file ./tailwind.config.ts
 
-### Code Export & Analysis
-
-Additional development utilities:
-```bash
-# Export code to a directory
-npm run export-code
-
-# Run full test suite
+# Run the test suite
 npm run test
 
-# Run single test execution
+# Run tests once
 npm run test:run
 ```
 
@@ -194,13 +260,18 @@ npm run test:run
 
 ## 📁 Project Architecture
 
-- **`src/core/`**: Core migration logic (AST transforms, analysis, Tailwind auditing)
-- **`src/cli/`**: Command-line interface tools for standalone usage
-- **`src/knowledge/`**: Component mappings, aliases, and migration rules
-- **`src/indexers/`**: Documentation indexing and parsing utilities
-- **`src/types/`**: Zod schemas and TypeScript contracts
-- **`data/generated/`**: Generated documentation files (v2/v3 LLM outputs)
-- **`data/index/`**: Component index references
+src/
+├── cli/         # command-line utilities
+├── core/        # analysis, rewriting, migration logic, AST helpers
+├── indexers/    # component/document indexing helpers
+├── knowledge/   # mappings, aliases, migration knowledge
+├── types/       # contracts and schemas
+├── server.ts    # MCP server registration
+└── index.ts     # stdio entry point
+
+data/
+├── generated/   # generated v2/v3 documentation corpus
+└── index/       # generated component indexes
 
 ## 🔗 File Formats
 
@@ -214,22 +285,41 @@ Generated documentation is available in multiple formats:
 | **Web Variant** | `heroui-v3-web-llms-full.txt` | v3 Web-specific documentation |
 | **Native Variant** | `heroui-v3-native-llms-full.txt` | v3 React Native documentation |
 
-## ⚠️ Known Limitations & Notes
+## ⚠️ Migration guidance & Known Limitations
 
-- **Navbar v3**: HeroUI v3 does not include a native Navbar component. Use `get_navbar_v3_backport` to generate a compatible implementation using v3 patterns.
-- **Hooks**: v3 uses specific hooks (`useDialog`, `usePopover`, `useOverlayState`) instead of the generic `useDisclosure`. Refer to individual component docs for correct hook usage.
-- **Confidence Levels**: Migration suggestions include confidence scores (0-1). Lower scores indicate heuristic guesses that should be manually verified.
-- **Manual Review Required**: Complex components (navigation, modals, overlays) should always be manually reviewed after transformation.
-- **Legacy Tools**: Some tools are marked as "legacy" but remain functional. They may be deprecated in future versions in favor of the public API tools.
+### What works well
+This server is especially useful for:
 
-## 🌟 Tips & Best Practices
+- identifying migration hotspots quickly
+- detecting common v2 imports and patterns
+- converting many compound component cases
+- generating structured rewrite diagnostics
+- helping teams migrate incrementally
 
-1. **Start with analysis**: Use `analyze_file` before applying transformations to understand what changes are needed.
-2. **Review with `compare_component`**: For critical components, always check side-by-side v2/v3 documentation.
-3. **Test incrementally**: Migrate one file at a time and test thoroughly before moving to the next.
-4. **Tailwind first**: Update `tailwind.config` and CSS before migrating component files.
-5. **Keep v2 branch**: Maintain a git branch with original v2 code for reference during migration.
-6. **Use corpus_status**: Run this before any analysis to ensure documentation is ready.
+### What still needs review
+Manual review is still recommended for:
+
+- navbar-related code
+- overlay logic and hook migration
+- modal composition changes
+- advanced Tailwind/theming patterns
+- any rewrite with warnings or low confidence
+
+## Known limitations
+
+- Some migrations are heuristic and cannot be guaranteed correct automatically.
+- HeroUI v3 beta may still evolve.
+- Certain components or patterns require manual refactoring rather than direct renaming.
+- Generated corpus health and project migration progress are related but not identical concerns.
+
+## Best practices
+
+- Start with `scan_project`, not `rewrite_file`
+- Use `analyze_file` before rewriting complex files
+- Review all warnings before committing changes
+- Migrate in small batches
+- Keep the original v2 branch available for comparison
+- Re-run scans after each migration batch
 
 ---
 
@@ -255,13 +345,6 @@ All source files include a header comment block with copyright information. The 
 - ⚠️ **You must distribute any derivative work** under the same AGPL-3.0+ license
 - ⚠️ **Network usage counts as distribution** (if you modify and run this server, you must provide access to the source)
 
-For more details, see the full [AGPL-3.0 License](https://www.gnu.org/licenses/agpl-3.0.html).
+For more details, see the full [AGPL-3.0 License](LICENSE.md).
 
----
-
-> [!TIP]
-> **Need help with Navbar?** The HeroUI v3 Navbar isn't natively available yet. Use `get_navbar_v3_backport` to generate a modern, compound-component compatible implementation.
-
-> [!NOTE]
-> **Hook Changes in v3**: `useDisclosure` is replaced with specific hooks like `useDialog`, `usePopover`, or the generic `useOverlayState` for custom open/close state management.
 
