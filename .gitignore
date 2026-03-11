@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.cache/
+data/generated/
+.DS_Store
+tmp-*
+.scan-cache.json
+script/export-code.ts
+export.txt
+PLAN_ACTION_EQUIPE_MCP_V2.md
+heroui_migration_plan.md
+tmp
+plan d'action.md

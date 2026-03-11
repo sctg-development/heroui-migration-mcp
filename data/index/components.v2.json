@@ -1,0 +1,436 @@
+[
+  {
+    "name": "Accordion",
+    "slug": "accordion",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/accordion.mdx",
+    "docPath": "/docs/components/accordion",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Alert",
+    "slug": "alert",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/alert.mdx",
+    "docPath": "/docs/components/alert",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Autocomplete",
+    "slug": "autocomplete",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/autocomplete.mdx",
+    "docPath": "/docs/components/autocomplete",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Avatar",
+    "slug": "avatar",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/avatar.mdx",
+    "docPath": "/docs/components/avatar",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Badge",
+    "slug": "badge",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/badge.mdx",
+    "docPath": "/docs/components/badge",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Breadcrumbs",
+    "slug": "breadcrumbs",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/breadcrumbs.mdx",
+    "docPath": "/docs/components/breadcrumbs",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Button",
+    "slug": "button",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/button.mdx",
+    "docPath": "/docs/components/button",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Calendar",
+    "slug": "calendar",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/calendar.mdx",
+    "docPath": "/docs/components/calendar",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Card",
+    "slug": "card",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/card.mdx",
+    "docPath": "/docs/components/card",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "CheckboxGroup",
+    "slug": "checkbox-group",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/checkbox-group.mdx",
+    "docPath": "/docs/components/checkbox-group",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "CheckboxGroup"
+    ]
+  },
+  {
+    "name": "Checkbox",
+    "slug": "checkbox",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/checkbox.mdx",
+    "docPath": "/docs/components/checkbox",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Chip",
+    "slug": "chip",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/chip.mdx",
+    "docPath": "/docs/components/chip",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "CircularProgress",
+    "slug": "circular-progress",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/circular-progress.mdx",
+    "docPath": "/docs/components/circular-progress",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "CircularProgress"
+    ]
+  },
+  {
+    "name": "Code",
+    "slug": "code",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/code.mdx",
+    "docPath": "/docs/components/code",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "DateInput",
+    "slug": "date-input",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/date-input.mdx",
+    "docPath": "/docs/components/date-input",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "DateInput",
+      "DateField"
+    ]
+  },
+  {
+    "name": "DatePicker",
+    "slug": "date-picker",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/date-picker.mdx",
+    "docPath": "/docs/components/date-picker",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "DatePicker"
+    ]
+  },
+  {
+    "name": "DateRangePicker",
+    "slug": "date-range-picker",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/date-range-picker.mdx",
+    "docPath": "/docs/components/date-range-picker",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "DateRangePicker"
+    ]
+  },
+  {
+    "name": "Divider",
+    "slug": "divider",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/divider.mdx",
+    "docPath": "/docs/components/divider",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Drawer",
+    "slug": "drawer",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/drawer.mdx",
+    "docPath": "/docs/components/drawer",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Dropdown",
+    "slug": "dropdown",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/dropdown.mdx",
+    "docPath": "/docs/components/dropdown",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Form",
+    "slug": "form",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/form.mdx",
+    "docPath": "/docs/components/form",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Image",
+    "slug": "image",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/image.mdx",
+    "docPath": "/docs/components/image",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "InputOtp",
+    "slug": "input-otp",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/input-otp.mdx",
+    "docPath": "/docs/components/input-otp",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "InputOtp"
+    ]
+  },
+  {
+    "name": "Input",
+    "slug": "input",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/input.mdx",
+    "docPath": "/docs/components/input",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Kbd",
+    "slug": "kbd",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/kbd.mdx",
+    "docPath": "/docs/components/kbd",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Link",
+    "slug": "link",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/link.mdx",
+    "docPath": "/docs/components/link",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Listbox",
+    "slug": "listbox",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/listbox.mdx",
+    "docPath": "/docs/components/listbox",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Modal",
+    "slug": "modal",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/modal.mdx",
+    "docPath": "/docs/components/modal",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Navbar",
+    "slug": "navbar",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/navbar.mdx",
+    "docPath": "/docs/components/navbar",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "NumberInput",
+    "slug": "number-input",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/number-input.mdx",
+    "docPath": "/docs/components/number-input",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "NumberInput"
+    ]
+  },
+  {
+    "name": "Pagination",
+    "slug": "pagination",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/pagination.mdx",
+    "docPath": "/docs/components/pagination",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Popover",
+    "slug": "popover",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/popover.mdx",
+    "docPath": "/docs/components/popover",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Progress",
+    "slug": "progress",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/progress.mdx",
+    "docPath": "/docs/components/progress",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "RadioGroup",
+    "slug": "radio-group",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/radio-group.mdx",
+    "docPath": "/docs/components/radio-group",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "RadioGroup"
+    ]
+  },
+  {
+    "name": "RangeCalendar",
+    "slug": "range-calendar",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/range-calendar.mdx",
+    "docPath": "/docs/components/range-calendar",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "RangeCalendar"
+    ]
+  },
+  {
+    "name": "ScrollShadow",
+    "slug": "scroll-shadow",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/scroll-shadow.mdx",
+    "docPath": "/docs/components/scroll-shadow",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "ScrollShadow"
+    ]
+  },
+  {
+    "name": "Select",
+    "slug": "select",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/select.mdx",
+    "docPath": "/docs/components/select",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Skeleton",
+    "slug": "skeleton",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/skeleton.mdx",
+    "docPath": "/docs/components/skeleton",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Slider",
+    "slug": "slider",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/slider.mdx",
+    "docPath": "/docs/components/slider",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Snippet",
+    "slug": "snippet",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/snippet.mdx",
+    "docPath": "/docs/components/snippet",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Spacer",
+    "slug": "spacer",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/spacer.mdx",
+    "docPath": "/docs/components/spacer",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Spinner",
+    "slug": "spinner",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/spinner.mdx",
+    "docPath": "/docs/components/spinner",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Switch",
+    "slug": "switch",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/switch.mdx",
+    "docPath": "/docs/components/switch",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Table",
+    "slug": "table",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/table.mdx",
+    "docPath": "/docs/components/table",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Tabs",
+    "slug": "tabs",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/tabs.mdx",
+    "docPath": "/docs/components/tabs",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Textarea",
+    "slug": "textarea",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/textarea.mdx",
+    "docPath": "/docs/components/textarea",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "TimeInput",
+    "slug": "time-input",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/time-input.mdx",
+    "docPath": "/docs/components/time-input",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "TimeInput"
+    ]
+  },
+  {
+    "name": "Toast",
+    "slug": "toast",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/toast.mdx",
+    "docPath": "/docs/components/toast",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Tooltip",
+    "slug": "tooltip",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/tooltip.mdx",
+    "docPath": "/docs/components/tooltip",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "User",
+    "slug": "user",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v2/apps/docs/content/docs/components/user.mdx",
+    "docPath": "/docs/components/user",
+    "excerpt": "**Category**: react-components"
+  }
+]

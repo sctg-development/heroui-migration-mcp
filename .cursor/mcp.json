@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "heroui-migration": {
+      "command": "node",
+      "args": [
+        "dist/src/index.js"
+      ]
+    },
+    "heroui-migration-dev": {
+      "command": "npx",
+      "args": [
+        "tsx",
+        "src/index.ts"
+      ]
+    }
+  }
+}

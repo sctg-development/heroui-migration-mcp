@@ -1,0 +1,601 @@
+[
+  {
+    "name": "ButtonGroup",
+    "slug": "button-group",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(buttons)/button-group.mdx",
+    "docPath": "/docs/react/components/(buttons)/button-group",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "ButtonGroup"
+    ]
+  },
+  {
+    "name": "Button",
+    "slug": "button",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(buttons)/button.mdx",
+    "docPath": "/docs/react/components/(buttons)/button",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "CloseButton",
+    "slug": "close-button",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(buttons)/close-button.mdx",
+    "docPath": "/docs/react/components/(buttons)/close-button",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "CloseButton"
+    ]
+  },
+  {
+    "name": "Dropdown",
+    "slug": "dropdown",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(collections)/dropdown.mdx",
+    "docPath": "/docs/react/components/(collections)/dropdown",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "ListBox",
+    "slug": "list-box",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(collections)/list-box.mdx",
+    "docPath": "/docs/react/components/(collections)/list-box",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "ListBox"
+    ]
+  },
+  {
+    "name": "TagGroup",
+    "slug": "tag-group",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(collections)/tag-group.mdx",
+    "docPath": "/docs/react/components/(collections)/tag-group",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "TagGroup"
+    ]
+  },
+  {
+    "name": "ColorArea",
+    "slug": "color-area",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(colors)/color-area.mdx",
+    "docPath": "/docs/react/components/(colors)/color-area",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "ColorArea"
+    ]
+  },
+  {
+    "name": "ColorField",
+    "slug": "color-field",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(colors)/color-field.mdx",
+    "docPath": "/docs/react/components/(colors)/color-field",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "ColorField"
+    ]
+  },
+  {
+    "name": "ColorPicker",
+    "slug": "color-picker",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(colors)/color-picker.mdx",
+    "docPath": "/docs/react/components/(colors)/color-picker",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "ColorPicker"
+    ]
+  },
+  {
+    "name": "ColorSlider",
+    "slug": "color-slider",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(colors)/color-slider.mdx",
+    "docPath": "/docs/react/components/(colors)/color-slider",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "ColorSlider"
+    ]
+  },
+  {
+    "name": "ColorSwatchPicker",
+    "slug": "color-swatch-picker",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(colors)/color-swatch-picker.mdx",
+    "docPath": "/docs/react/components/(colors)/color-swatch-picker",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "ColorSwatchPicker"
+    ]
+  },
+  {
+    "name": "ColorSwatch",
+    "slug": "color-swatch",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(colors)/color-swatch.mdx",
+    "docPath": "/docs/react/components/(colors)/color-swatch",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "ColorSwatch"
+    ]
+  },
+  {
+    "name": "Slider",
+    "slug": "slider",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(controls)/slider.mdx",
+    "docPath": "/docs/react/components/(controls)/slider",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Switch",
+    "slug": "switch",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(controls)/switch.mdx",
+    "docPath": "/docs/react/components/(controls)/switch",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Badge",
+    "slug": "badge",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(data-display)/badge.mdx",
+    "docPath": "/docs/react/components/(data-display)/badge",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Chip",
+    "slug": "chip",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(data-display)/chip.mdx",
+    "docPath": "/docs/react/components/(data-display)/chip",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Table",
+    "slug": "table",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(data-display)/table.mdx",
+    "docPath": "/docs/react/components/(data-display)/table",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Calendar",
+    "slug": "calendar",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(date-and-time)/calendar.mdx",
+    "docPath": "/docs/react/components/(date-and-time)/calendar",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "DateField",
+    "slug": "date-field",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(date-and-time)/date-field.mdx",
+    "docPath": "/docs/react/components/(date-and-time)/date-field",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "DateField"
+    ]
+  },
+  {
+    "name": "DatePicker",
+    "slug": "date-picker",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(date-and-time)/date-picker.mdx",
+    "docPath": "/docs/react/components/(date-and-time)/date-picker",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "DatePicker"
+    ]
+  },
+  {
+    "name": "DateRangePicker",
+    "slug": "date-range-picker",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(date-and-time)/date-range-picker.mdx",
+    "docPath": "/docs/react/components/(date-and-time)/date-range-picker",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "DateRangePicker"
+    ]
+  },
+  {
+    "name": "RangeCalendar",
+    "slug": "range-calendar",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(date-and-time)/range-calendar.mdx",
+    "docPath": "/docs/react/components/(date-and-time)/range-calendar",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "RangeCalendar"
+    ]
+  },
+  {
+    "name": "TimeField",
+    "slug": "time-field",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(date-and-time)/time-field.mdx",
+    "docPath": "/docs/react/components/(date-and-time)/time-field",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "TimeField"
+    ]
+  },
+  {
+    "name": "Alert",
+    "slug": "alert",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(feedback)/alert.mdx",
+    "docPath": "/docs/react/components/(feedback)/alert",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Skeleton",
+    "slug": "skeleton",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(feedback)/skeleton.mdx",
+    "docPath": "/docs/react/components/(feedback)/skeleton",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Spinner",
+    "slug": "spinner",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(feedback)/spinner.mdx",
+    "docPath": "/docs/react/components/(feedback)/spinner",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "CheckboxGroup",
+    "slug": "checkbox-group",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(forms)/checkbox-group.mdx",
+    "docPath": "/docs/react/components/(forms)/checkbox-group",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "CheckboxGroup"
+    ]
+  },
+  {
+    "name": "Checkbox",
+    "slug": "checkbox",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(forms)/checkbox.mdx",
+    "docPath": "/docs/react/components/(forms)/checkbox",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Description",
+    "slug": "description",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(forms)/description.mdx",
+    "docPath": "/docs/react/components/(forms)/description",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "ErrorMessage",
+    "slug": "error-message",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(forms)/error-message.mdx",
+    "docPath": "/docs/react/components/(forms)/error-message",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "ErrorMessage"
+    ]
+  },
+  {
+    "name": "FieldError",
+    "slug": "field-error",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(forms)/field-error.mdx",
+    "docPath": "/docs/react/components/(forms)/field-error",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "FieldError"
+    ]
+  },
+  {
+    "name": "Fieldset",
+    "slug": "fieldset",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(forms)/fieldset.mdx",
+    "docPath": "/docs/react/components/(forms)/fieldset",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Form",
+    "slug": "form",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(forms)/form.mdx",
+    "docPath": "/docs/react/components/(forms)/form",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "InputGroup",
+    "slug": "input-group",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(forms)/input-group.mdx",
+    "docPath": "/docs/react/components/(forms)/input-group",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "InputGroup"
+    ]
+  },
+  {
+    "name": "InputOtp",
+    "slug": "input-otp",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(forms)/input-otp.mdx",
+    "docPath": "/docs/react/components/(forms)/input-otp",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "InputOtp"
+    ]
+  },
+  {
+    "name": "Input",
+    "slug": "input",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(forms)/input.mdx",
+    "docPath": "/docs/react/components/(forms)/input",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Label",
+    "slug": "label",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(forms)/label.mdx",
+    "docPath": "/docs/react/components/(forms)/label",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "NumberField",
+    "slug": "number-field",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(forms)/number-field.mdx",
+    "docPath": "/docs/react/components/(forms)/number-field",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "NumberField"
+    ]
+  },
+  {
+    "name": "RadioGroup",
+    "slug": "radio-group",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(forms)/radio-group.mdx",
+    "docPath": "/docs/react/components/(forms)/radio-group",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "RadioGroup"
+    ]
+  },
+  {
+    "name": "SearchField",
+    "slug": "search-field",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(forms)/search-field.mdx",
+    "docPath": "/docs/react/components/(forms)/search-field",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "SearchField"
+    ]
+  },
+  {
+    "name": "TextArea",
+    "slug": "text-area",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(forms)/text-area.mdx",
+    "docPath": "/docs/react/components/(forms)/text-area",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "TextArea"
+    ]
+  },
+  {
+    "name": "TextField",
+    "slug": "text-field",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(forms)/text-field.mdx",
+    "docPath": "/docs/react/components/(forms)/text-field",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "TextField"
+    ]
+  },
+  {
+    "name": "Card",
+    "slug": "card",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(layout)/card.mdx",
+    "docPath": "/docs/react/components/(layout)/card",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Separator",
+    "slug": "separator",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(layout)/separator.mdx",
+    "docPath": "/docs/react/components/(layout)/separator",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Surface",
+    "slug": "surface",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(layout)/surface.mdx",
+    "docPath": "/docs/react/components/(layout)/surface",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Avatar",
+    "slug": "avatar",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(media)/avatar.mdx",
+    "docPath": "/docs/react/components/(media)/avatar",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Accordion",
+    "slug": "accordion",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(navigation)/accordion.mdx",
+    "docPath": "/docs/react/components/(navigation)/accordion",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Breadcrumbs",
+    "slug": "breadcrumbs",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(navigation)/breadcrumbs.mdx",
+    "docPath": "/docs/react/components/(navigation)/breadcrumbs",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "DisclosureGroup",
+    "slug": "disclosure-group",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(navigation)/disclosure-group.mdx",
+    "docPath": "/docs/react/components/(navigation)/disclosure-group",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "DisclosureGroup"
+    ]
+  },
+  {
+    "name": "Disclosure",
+    "slug": "disclosure",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(navigation)/disclosure.mdx",
+    "docPath": "/docs/react/components/(navigation)/disclosure",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Link",
+    "slug": "link",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(navigation)/link.mdx",
+    "docPath": "/docs/react/components/(navigation)/link",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Pagination",
+    "slug": "pagination",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(navigation)/pagination.mdx",
+    "docPath": "/docs/react/components/(navigation)/pagination",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Tabs",
+    "slug": "tabs",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(navigation)/tabs.mdx",
+    "docPath": "/docs/react/components/(navigation)/tabs",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "AlertDialog",
+    "slug": "alert-dialog",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(overlays)/alert-dialog.mdx",
+    "docPath": "/docs/react/components/(overlays)/alert-dialog",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "AlertDialog"
+    ]
+  },
+  {
+    "name": "Modal",
+    "slug": "modal",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(overlays)/modal.mdx",
+    "docPath": "/docs/react/components/(overlays)/modal",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Popover",
+    "slug": "popover",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(overlays)/popover.mdx",
+    "docPath": "/docs/react/components/(overlays)/popover",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Toast",
+    "slug": "toast",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(overlays)/toast.mdx",
+    "docPath": "/docs/react/components/(overlays)/toast",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Tooltip",
+    "slug": "tooltip",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(overlays)/tooltip.mdx",
+    "docPath": "/docs/react/components/(overlays)/tooltip",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Autocomplete",
+    "slug": "autocomplete",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(pickers)/autocomplete.mdx",
+    "docPath": "/docs/react/components/(pickers)/autocomplete",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "ComboBox",
+    "slug": "combo-box",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(pickers)/combo-box.mdx",
+    "docPath": "/docs/react/components/(pickers)/combo-box",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "ComboBox"
+    ]
+  },
+  {
+    "name": "Select",
+    "slug": "select",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(pickers)/select.mdx",
+    "docPath": "/docs/react/components/(pickers)/select",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "Kbd",
+    "slug": "kbd",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(typography)/kbd.mdx",
+    "docPath": "/docs/react/components/(typography)/kbd",
+    "excerpt": "**Category**: react-components"
+  },
+  {
+    "name": "ScrollShadow",
+    "slug": "scroll-shadow",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/(utilities)/scroll-shadow.mdx",
+    "docPath": "/docs/react/components/(utilities)/scroll-shadow",
+    "excerpt": "**Category**: react-components",
+    "aliases": [
+      "ScrollShadow"
+    ]
+  },
+  {
+    "name": "Index",
+    "slug": "index",
+    "category": "react-components",
+    "source": "https://raw.githubusercontent.com/heroui-inc/heroui/v3/apps/docs/content/docs/react/components/index.mdx",
+    "docPath": "/docs/react/components/index",
+    "excerpt": "**Category**: react-components"
+  }
+]
