@@ -20,7 +20,6 @@ import { createServer } from "./server.js";
 // import { getHerouiDocs } from "./get-heroui-docs.js"; // used by CLI commands later
 import fs from "node:fs/promises";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
 
 // __dirname equivalent in ES modules
 // use working directory for path resolution so CLI and runtime agree

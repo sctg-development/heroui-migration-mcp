@@ -14,6 +14,8 @@
     "inspect:dev": "npx tsx --watch src/index.ts --run=inspect",
     "test": "vitest",
     "test:run": "vitest run",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "build-corpus": "tsx src/cli/build-corpus.ts",
     "doctor": "tsx src/cli/doctor.ts",
     "build-index": "tsx src/cli/build-index.ts",
@@ -34,11 +36,17 @@
     "@babel/parser": "^7.29.0",
     "@babel/traverse": "^7.29.0",
     "@babel/types": "^7.29.0",
+    "@eslint/compat": "^2.0.3",
+    "@eslint/eslintrc": "^3.0.0",
+    "@eslint/js": "^10.0.1",
     "@modelcontextprotocol/inspector": "^0.21.1",
     "@types/node": "^22.13.10",
     "@types/yargs": "^17.0.35",
+    "eslint": "^10.0.0",
+    "jiti": "^2.6.1",
     "tsx": "^4.19.2",
     "typescript": "^5.8.2",
+    "typescript-eslint": "^8.0.0",
     "vitest": "^4.0.18"
   }
 }

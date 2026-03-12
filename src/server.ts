@@ -349,7 +349,7 @@ function registerPublicTools(server: McpServer) {
       ];
       const missing = expected.filter((n) => !files.includes(n));
 
-      let indexes: Record<string, any> = {};
+      const indexes: Record<string, any> = {};
       for (const v of ["v2", "v3"]) {
         const path = `heroui-${v}-index.json`;
         if (files.includes(path)) {

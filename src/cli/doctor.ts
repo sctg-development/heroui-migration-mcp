@@ -54,7 +54,7 @@ export async function doctor() {
             console.log(`-- ${v.toUpperCase()} corpus --`);
             console.log(`  generatedAt: ${idx.generatedAt || "<unknown>"}`);
             // if index includes an "outputs" summary, trust it; otherwise compute
-            let outs: Record<string, { pages?: number; bytes?: number }> = idx.outputs || {};
+            const outs: Record<string, { pages?: number; bytes?: number }> = idx.outputs || {};
             if (Object.keys(outs).length === 0) {
                 // fallback: inspect files directly
                 const candidate = [`heroui-${v}-llms-components.txt`, `heroui-${v}-llms-full.txt`];

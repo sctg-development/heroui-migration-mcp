@@ -400,7 +400,7 @@ export async function compareComponent(component: string): Promise<ComponentComp
   const exists3 = !!e3;
 
   // build alias list using resolver if available
-  let aliases: string[] = [];
+  const aliases: string[] = [];
   try {
     const { resolveAlias } = await import("../knowledge/aliases.js");
     const res = resolveAlias(component);
