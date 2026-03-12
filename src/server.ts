@@ -17,16 +17,14 @@
  */
 import fs from "node:fs/promises";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
 import { McpServer, ResourceTemplate } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
-import fg from "fast-glob";
 import {
   transformCode,
   analyzeTailwindConfig,
   checkV3Compatibility
 } from "./core/migration.js";
-import { KNOWN_V2_IMPORTS, KNOWN_V2_PROPS } from "./knowledge/mappings.js";// zod schemas are defined in src/types/schemas.ts for general use, but
+import { KNOWN_V2_IMPORTS } from "./knowledge/mappings.js";// zod schemas are defined in src/types/schemas.ts for general use, but
 // importing that file directly causes issues when Vitest dynamically loads
 // `server.ts` (Node can't resolve a `.ts` module path).  To keep the public
 // API schema definitions available here without creating circular runtime

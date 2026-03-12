@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#!/usr/bin/env node
+
 import { getHerouiDocs } from "../src/get-heroui-docs.js";
 import path from "node:path";
 
